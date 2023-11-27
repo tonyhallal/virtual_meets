@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary-color: #4956E1FF;
+        --secondary-color: #83CCF0;
+    }
+
+    * {
+        font-family: Poppins, serif;
+    }
+
+    h1 {
+        @apply text-[2.7rem] md:text-[3rem] lg:text-[4rem] font-bold
+    }
+
+    h2 {
+        @apply text-[2.4rem] md:text-[2.7rem] lg:text-[3.5rem] font-bold
+    }
+
+    p {
+        @apply text-[1.3rem] md:text-[1.6rem] lg:text-[2.4rem]
+    }
+
+    button {
+        @apply p-4 mt-8 rounded-full font-bold bg-primary text-white  hover:opacity-70 duration-300 user-select-none
+    }
+
+}
+
+@layer components {
+    .home-page-link {
+        @apply self-end text-white text-[1rem] md:text-[1.3rem] font-bold hover:text-secondary duration-300
+    }
+
+.calendar-max-width {
+    @apply max-w-[3500px]
+}
+
+    @media (min-width: 3500px) {
+        .calendar-max-width {
+            margin-inline: auto;
+        }
+    }
+}
+
+@layer utilities {
+    .bg-primary {
+        background-color: var(--primary-color);
+    }
+
+    .bg-secondary {
+        background-color: var(--secondary-color);
+    }
+
+    .text-primary {
+        color: var(--primary-color);
+    }
+
+    .text-secondary {
+        color: var(--secondary-color);
+    }
+
+    .common-width {
+        @apply w-[90%] max-w-[1350px] mx-auto
+    }
+
+    .constraint-width {
+        @apply w-2/3 md:w-1/2
+    }
+
+    .spacing-between-sections {
+        @apply mt-12
+    }
+
+    .footer-text {
+        @apply text-[1.3rem]
+    }
+
+    .user-select-none {
+        user-select: none;
+    }
+
+    .w-max-content {
+        width: max-content;
+    }
+}
