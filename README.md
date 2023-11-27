@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-1.  Download backend and frontend dependencies:
+1.  Download backend and frontend dependencies, then run the project:
 - Backend:
 ```bash
 cd api
@@ -13,10 +13,17 @@ cd api
 ```bash
 npm install
 ```
+```bash
+npm run dev
+```
+
 -Frontend:
 ```bash
 cd client
 ```
 ```bash
 npm install
+```
+```bash
+npm run dev
 ```
