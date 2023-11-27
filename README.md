@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
--Frontend:
+- Frontend:
 ```bash
 cd client
 ```
